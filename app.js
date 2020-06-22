@@ -1,19 +1,20 @@
-const jsonServer = require('json-server');
-const path = require('path');
+var express = require('express');
+var app = express()
+const DB = require('./db');
 
-const server = jsonServer.create();
-const router = jsonServer.router(path.resolve(__dirname + '/db.json'));
-const middlewares = jsonServer.defaults({
-    static: path.resolve(__dirname + '/../build/')
-});
+app.listen(process.env.PORT || 8080)
 
-const port = process.env.PORT || 3001;
 
-server.use(middlewares);
+    app.get('/', (req, res) => {        
 
-server.use(jsonServer.bodyParser);
+        res.send({
+        	"text": "Hi",
+            "attachments": [
+              {
+                "title": "this week menu",
+                "imageUrl": "https://img9.yna.co.kr/etc/inner/KR/2019/04/08/AKR20190408066300073_01_i_P2.jpg"
+              }
+            ]
+        })
+    });
 
-server.use(router);
-server.listen(port, () => {
-    console.log('JSON Server is running');
-});
