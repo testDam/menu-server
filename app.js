@@ -4,10 +4,11 @@ const DB = require('./db');
 
 app.listen(process.env.PORT || 8080)
 
-    app.get('/', (req, res) => {        
+    app.get('/test', (req, res) => {        
 
         res.send({
         	"text": "Did you call me?",
+	"responseType": "inChannel"
             "attachments": [
               {
                 "title": "Silicon Park Weekly Menu Table",
