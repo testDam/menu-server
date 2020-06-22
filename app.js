@@ -4,17 +4,15 @@ const DB = require('./db');
 
 app.listen(process.env.PORT || 8080)
 
-
     app.get('/', (req, res) => {        
 
         res.send({
-        	"text": "Hi",
+        	"text": "Did you call me?",
             "attachments": [
               {
-                "title": "this week menu",
+                "title": "Silicon Park Weekly Menu Table",
                 "imageUrl": "https://img9.yna.co.kr/etc/inner/KR/2019/04/08/AKR20190408066300073_01_i_P2.jpg"
               }
             ]
         })
     });
-
