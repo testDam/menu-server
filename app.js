@@ -4,7 +4,7 @@ const DB = require('./db');
 
 app.listen(process.env.PORT || 8080)
 
-    app.get('/test', (req, res) => {        
+    app.get('/', (req, res) => {        
 
         res.send({
         	"text": "Did you call me?",
