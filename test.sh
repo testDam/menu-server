@@ -1,0 +1,2 @@
+hook_url=https://hook.dooray.com/services/2141235803690805491/2773150747414132655/qyts6NT7RBqfKAh7J0hu8g
+curl -H "Content-Type: application/json" -X POST -d '{"botName": "주간메뉴를 알리는 Bot", "botIconImage": "https://thumbs.gfycat.com/QuarrelsomeDismalBobolink-size_restricted.gif", "attachments" : [{"title" : "실리콘파크 식당 주간메뉴 (06.22~06.29)","titleLink" : "http://whatsup.nhnent.com/shortCut/boardArticle/299928","text" : "이번주 메뉴입니다.","imageUrl": "https://i.ibb.co/c8sk091/aadf8cc0-854d-4a14-a1c2-63c4762f17e3.png"}]}' $hook_url
