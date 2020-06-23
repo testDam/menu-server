@@ -2,7 +2,7 @@
   "name": "menu-server",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "test.sh",
   "dependencies": {
     "express": "^4.17.1",
     "lowdb": "^1.0.0"
@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node app.js",
+    "start": "bash test.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
